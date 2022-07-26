@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flash Card</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscript.js"></script>
+</head>
+<body onload="checkCookie()">
+    <h1>Flash Card</h1>
+    <button onclick="showForm()">Add Question</button><br><br>
+    <form onsubmit="submitForm(event)" id="form">
+        <button onclick="removeForm()" id="close" type="button">X</button>
+        <p id="emptyvalue" style="color:red"></p>
+        <label for="title">Title:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="description">Description:</label><br>
+        <input type="text" id="description" name="description">
+        <input type="submit" value="Submit" onclick="">
+    </form>
+</body>
+</html>
